@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Great Epeiolus Sword Formation</title>
+  <!-- Import Google Font for Xianxia feel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Serif+SC:wght@700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <div id="canvas-container"></div>
+    <div id="ui-layer">
+      <div class="corner top-left"></div>
+      <div class="corner top-right"></div>
+      <div class="corner bottom-left"></div>
+      <div class="corner bottom-right"></div>
+
+      <div class="debug-info">
+        <div>System: SPIRITUAL SENSE ONLINE</div>
+        <div id="sword-count">Swords: 0</div>
+        <div id="state-display">State: IDLE</div>
+      </div>
+    </div>
+    <div class="scanlines"></div>
+    <video id="input-video" style="display:none;" playsinline></video>
+  </div>
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="/src/SwordSwarm.js"></script>
+</body>
+
+</html>
